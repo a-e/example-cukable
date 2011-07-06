@@ -67,6 +67,7 @@ GEM
       capybara (>= 1.0.0)
       cucumber (~> 1.0.0)
       nokogiri (>= 1.4.6)
+    database_cleaner (0.6.7)
     diff-lcs (1.1.2)
     erubis (2.7.0)
     execjs (1.2.0)
@@ -148,10 +149,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  capybara
   coffee-script
   cucumber
   cucumber-rails
   cukable!
+  database_cleaner
   jquery-rails
   json
   rails (= 3.1.0.rc4)

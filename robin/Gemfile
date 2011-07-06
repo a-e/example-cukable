@@ -5,6 +5,8 @@ gem 'cukable', :git => 'git://github.com/wapcaplet/cukable.git', :branch => 'mul
 gem 'cucumber'
 gem 'cucumber-rails'
 gem 'sqlite3'
+gem 'database_cleaner'
+gem 'capybara'
 
 # Asset template engines
 gem 'json'
