@@ -62,3 +62,26 @@ Repeat for the `robin` application:
     (Yes, trust the .rvmrc)
     $ bundle install
 
+
+Verification
+------------
+
+Make sure the basic Rails applications work:
+
+    $ cd batman
+    $ script/server
+
+Visit http://localhost:3000/. You should see **Batman**. Repeat for the `robin`
+app. You should see **Robin**.
+
+
+TODO
+----
+
+- Create basic Cucumber scenarios for both apps
+- Create FitNesse wiki (sibling of `batman` and `robin` directories)
+- Create/convert features to Cukable wiki pages
+- Add some different gems to each app, to make their gemsets distinct
+- Make changes to Cukable code to allow it to support multiple apps
+- Make sure Cukable is smart enough to switch RVM environments when it runs
+
