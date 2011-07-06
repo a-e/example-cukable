@@ -1,2 +1,12 @@
 batman/log/*
 robin/log/*
+
+# FitNesse things
+*.zip
+FitNesseRoot/RecentChanges
+FitNesseRoot/ErrorLogs
+FitNesseRoot/files/testResults
+
+# ViM things
+*~
+.*.swp

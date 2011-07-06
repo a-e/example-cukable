@@ -1,0 +1,8 @@
+!1 Welcome to [[FitNesse][FitNesse.FitNesse]]!
+!3 ''The fully integrated stand-alone acceptance testing framework and wiki.''
+
+!2 Cukable testing examples:
+.BatMan
+.RobIn
+
+!note Release v20110104
