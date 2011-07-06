@@ -87,10 +87,10 @@ You should see **Robin**.
 Both `batman` and `robin` include some very simple Cucumber features. To run them:
 
     $ cd batman
-    $ cucumber --format pretty
+    $ cucumber
 
     $ cd ../robin
-    $ cucumber --format pretty
+    $ cucumber
 
 If everything is green, you should be ready to start testing using FitNesse/Cukable.
 
