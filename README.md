@@ -79,11 +79,16 @@ TODO
 ----
 
 - Create basic Cucumber scenarios for both apps
-- Create FitNesse wiki (sibling of `batman` and `robin` directories)
 - Create/convert features to Cukable wiki pages
 - Add some different gems to each app, to make their gemsets distinct
 - Make changes to Cukable code to allow it to support multiple apps
-- Make sure Cukable is smart enough to switch RVM environments when it runs
+- (Eric) Make sure Cukable is smart enough to switch RVM environments when it runs
+
+
+DONE
+----
+
+- Create FitNesse wiki (sibling of `batman` and `robin` directories)
 
 
 References
