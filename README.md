@@ -85,3 +85,14 @@ TODO
 - Make changes to Cukable code to allow it to support multiple apps
 - Make sure Cukable is smart enough to switch RVM environments when it runs
 
+
+References
+----------
+
+- [Cukable docs](http://rdoc.info/github/wapcaplet/cukable/master/frames)
+
+Running RVM sub-shells:
+
+- http://groups.google.com/group/rubyversionmanager/browse_thread/thread/61bbfba6401e7bb1
+- http://beginrescueend.com/workflow/subshells/
+
