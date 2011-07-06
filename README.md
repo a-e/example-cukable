@@ -27,7 +27,11 @@ Clone this repo:
 
     $ git clone git@github.com:wapcaplet/example-cukable.git
 
-There are two simple Rails applications in this repo, called `batman` and `robin`.
+There are two simple Rails applications in this repo, called `batman` and
+`robin`. The `batman` app is based on Rails 2.3.5, and `robin` uses Rails
+3.1.0.rc4. This is by design, to allow testing Cukable with multiple
+applications having different dependencies.
+
 You should create separate RVM gemsets for these two apps:
 
     $ rvm ree
@@ -71,8 +75,37 @@ Make sure the basic Rails applications work:
     $ cd batman
     $ script/server
 
-Visit http://localhost:3000/. You should see **Batman**. Repeat for the `robin`
-app. You should see **Robin**.
+
+Visit http://localhost:3000/. You should see **Batman**. Repeat for `robin`
+(note the different command to start the server):
+
+    $ cd ../robin
+    $ rails server
+
+You should see **Robin**.
+
+Both `batman` and `robin` include some very simple Cucumber features. To run them:
+
+    $ cd batman
+    $ cucumber --format pretty
+
+    $ cd ../robin
+    $ cucumber --format pretty
+
+If everything is green, you should be ready to start testing using FitNesse/Cukable.
+
+
+Too many gems?
+--------------
+
+If your gemset gets cluttered with stuff you don't need, and/or you have
+multiple versions of some gems, you can clean them all out and start fresh.
+Use the provided `remove_all_gems.sh` shell script to remove all gems, then
+re-run `bundle install`. For example, to start anew in the `batman` gemset:
+
+    $ cd batman
+    $ sh ../remove_all_gems.sh
+    $ bundle install
 
 
 TODO
@@ -80,8 +113,12 @@ TODO
 
 - Create basic Cucumber scenarios for both apps
 - Create/convert features to Cukable wiki pages
-- Add some different gems to each app, to make their gemsets distinct
-- Make changes to Cukable code to allow it to support multiple apps
+
+
+Assigned
+--------
+
+- (Eric) Make changes to Cukable code to allow it to support multiple apps
 - (Eric) Make sure Cukable is smart enough to switch RVM environments when it runs
 
 
@@ -89,6 +126,7 @@ DONE
 ----
 
 - Create FitNesse wiki (sibling of `batman` and `robin` directories)
+- Add some different gems to each app, to make their gemsets distinct
 
 
 References
