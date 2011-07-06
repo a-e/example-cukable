@@ -8,9 +8,9 @@ with multiple Rails applications.
 Prerequisites
 -------------
 
-- [RVM](http://beginrescueend.com):
-
-After installing RVM, install the Ruby Enterprise Edition:
+Install [RVM](http://beginrescueend.com), and follow the instructions for
+editing your `.bash_profile`. After installing and activating RVM, install the
+Ruby Enterprise Edition:
 
     $ rvm install ree
 
