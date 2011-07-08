@@ -32,9 +32,11 @@ There are two simple Rails applications in this repo, called `batman` and
 3.1.0.rc4. This is by design, to allow testing Cukable with multiple
 applications having different dependencies.
 
-You should create separate RVM gemsets for these two apps:
+You should create *three* separate RVM gemsets; one for the root project, and
+one for each Rails application:
 
     $ rvm ree
+    $ rvm gemset create example-cukable
     $ rvm gemset create batman
     $ rvm gemset create robin
 
@@ -51,10 +53,8 @@ RVM will ask you whether to trust these files when you first `cd` into either of
 
 Make sure you're in the right gemset:
 
-    $ rvm info
-
-    (...)
-    gemset:    "batman"
+    $ rvm gemset name
+    batman
 
 Then install the gems:
 
@@ -64,7 +64,25 @@ Repeat for the `robin` application:
 
     $ cd ../robin
     (Yes, trust the .rvmrc)
+
+    $ rvm gemset name
+    robin
+
     $ bundle install
+
+Finally, when you change back into the root directory (`example-cukable`), that
+gemset should be automatically loaded from its `.rvmrc`:
+
+    $ cd ..
+    (Yes, trust the .rvmrc)
+
+    $ rvm gemset name
+    example-cukable
+
+Install the gems for the root `example-cukable` project:
+
+    $ bundle install
+
 
 
 Verification

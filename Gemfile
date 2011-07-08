@@ -1,5 +1,4 @@
 source 'http://rubygems.org'
 
-gem 'rails', '2.3.5'
-gem 'cukable'
-
+gem 'cukable', '0.1.2.beta', :path => 'gems'
+gem 'rubyslim', '0.1.1', :path => 'gems'

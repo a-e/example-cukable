@@ -1,12 +1,12 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0.rc4'
-gem 'cukable', :git => 'git://github.com/wapcaplet/cukable.git', :branch => 'multi-app'
 gem 'cucumber'
 gem 'cucumber-rails'
 gem 'sqlite3'
 gem 'database_cleaner'
 gem 'capybara'
+gem 'cukable', '0.1.2.beta', :path => '../gems'
 
 # Asset template engines
 gem 'json'

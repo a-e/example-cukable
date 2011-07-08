@@ -1,9 +1,7 @@
-GIT
-  remote: git://github.com/wapcaplet/cukable.git
-  revision: 3ef40fcbd5abaeff6c20d0b880cfacbbc38a0492
-  branch: multi-app
+PATH
+  remote: ../gems
   specs:
-    cukable (0.1.1)
+    cukable (0.1.2.beta)
       cucumber
       diff-lcs
       json
@@ -82,7 +80,7 @@ DEPENDENCIES
   capybara (= 0.4.0)
   cucumber (= 0.8.5)
   cucumber-rails (= 0.3.2)
-  cukable!
+  cukable (= 0.1.2.beta)!
   database_cleaner
   rails (= 2.3.5)
   rake (= 0.8.7)
