@@ -2,6 +2,7 @@ These variables must be defined for rubyslim to work:
 !define TEST_SYSTEM {slim}
 !define TEST_RUNNER {bundle exec rubyslim}
 !define COMMAND_PATTERN {bundle exec rubyslim}
+!define PROJECT_DIR {batman}
 
 Extra command-line arguments to pass to Cucumber:
 !define CUCUMBER_ARGS {}
