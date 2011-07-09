@@ -1,0 +1,9 @@
+These variables must be defined for rubyslim to work:
+!define TEST_SYSTEM {slim}
+!define TEST_RUNNER {rubyslim}
+!define COMMAND_PATTERN {rubyslim}
+
+Extra command-line arguments to pass to Cucumber:
+!define CUCUMBER_ARGS {}
+
+!contents -R9 -p -f -h
