@@ -14,3 +14,12 @@ FitNesseRoot/files/testResults
 
 # Databases
 *.sqlite3
+
+# SliM results and temporary fitnesse output
+batman/features/fitnesse
+robin/features/fitnesse
+batman/slim_results
+robin/slim_results
+
+# Bundler things
+.bundle/*

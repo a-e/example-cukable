@@ -1,0 +1,21 @@
+!define TEST_SYSTEM {slim}
+!define TEST_RUNNER {bundle exec rubyslim}
+!define COMMAND_PATTERN {bundle exec rubyslim}
+
+!| Table: Cuke | | batman |
+| Feature: Batman homepage |
+| Scenario: Heading |
+| When I am on the homepage |
+| Then I should see "Batman" |
+| Scenario: Version |
+| When I am on the homepage |
+| Then I should see "This is a Rails 2.3.5 application" |
+
+!| Table: Cuke | | robin |
+| Feature: Homepage |
+| Scenario: Heading |
+| When I am on the homepage |
+| Then I should see "Robin" |
+| Scenario: Version |
+| When I am on the homepage |
+| Then I should see "This is a Rails 3.1.0.rc4 application" |

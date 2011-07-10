@@ -1,0 +1,5 @@
+!| import |
+| Cukable |
+
+| script | Cuke |
+| accelerate; | ${PAGE_PATH}.${PAGE_NAME} | ${CUCUMBER_ARGS} |

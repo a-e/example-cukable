@@ -6,7 +6,7 @@ gem 'cucumber-rails'
 gem 'sqlite3'
 gem 'database_cleaner'
 gem 'capybara'
-gem 'cukable', '0.1.2.beta', :path => '../gems'
+gem 'cukable', '0.1.2'
 
 # Asset template engines
 gem 'json'
