@@ -1,6 +1,3 @@
-[submodule "gems/cukable-0.1.2.beta"]
-	path = gems/cukable-0.1.2.beta
-	url = git@github.com:wapcaplet/cukable.git
 [submodule "gems/rubyslim-0.1.1"]
 	path = gems/rubyslim-0.1.1
 	url = git@github.com:wapcaplet/rubyslim.git
